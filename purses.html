@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    </head>
+    <body>
+        <div class="sidebar" id="sidebar">
+            <a href="/home.html">🏠 Home</a>
+            <a href="/purses.html">👜  Purses</a>
+            <a href="/shoes.html"> 👠 Contact</a>
+        </div>
+    
+        <!-- Circular Button -->
+        <button class="menu-btn" id="menu-btn">☰</button>
+    
+        <!-- Link to External JavaScript -->
+        <script src="/back.js"></script>
+        
+        <div class="container">
+            <h2 style="text-align: center;">Purses</h2>
+    
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="/pursesimg/promo .png" alt="Shoes">
+                    <h3>Stylish Shoes</h3>
+                    <p>$49.99</p>
+                    <button onclick="addToCart('Stylish Shoes', 49.99)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 2 -->
+                <div class="product">
+                    <img src="/pursesimg/promo1.png" alt="Purse">
+                    <h3>Elegant Purse</h3>
+                    <p>$59.99</p>
+                    <button onclick="addToCart('Stylish Shoes', 49.99)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 3 -->
+                <div class="product">
+                    <img src="/pursesimg/promo3.png" alt="Dress">
+                    <h3>Chic Dress</h3>
+                    <p>$79.99</p>
+                    <button onclick="addToCart('Stylish Shoes', 49.99)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 4 -->
+                <div class="product">
+                    <img src="/pursesimg/purse1.png" alt="Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>$129.99</p>
+                    <button onclick="addToCart('Stylish Shoes', 49.99)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 5 -->
+                <div class="product">
+                    <img src="/pursesimg/purse2.png" alt="Sunglasses">
+                    <h3>Trendy Sunglasses</h3>
+                    <p>$39.99</p>
+                    <button onclick="addToCart('Stylish Shoes', 49.99)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 6 -->
+                <div class="product">
+                    <img src="/pursesimg/purse3.png" alt="Perfume">
+                    <h3>Premium Perfume</h3>
+                    <p>$89.99</p>
+                    <button onclick="addToCart('Stylish Shoes', 49.99)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 7 -->
+                <div class="product">
+                    <img src="/pursesimg/purse2.png" alt="Handbag">
+                    <h3>Designer Handbag</h3>
+                    <p>$149.99</p>
+                    <button onclick="addToCart('Stylish Shoes', 49.99)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 8 -->
+                <div class="product">
+                    <img src="https://source.unsplash.com/300x200/?jacket" alt="Jacket">
+                    <h3>Winter Jacket</h3>
+                    <p>$99.99</p>
+                    <button onclick="addToCart('Stylish Shoes', 49.99)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-modal" id="cart-modal">
+            <div class="cart-content">
+                <div class="cart-header">
+                    <h3>Your Cart</h3>
+                    <button onclick="closeCart()">Close</button>
+                </div>
+
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be added here -->
+                </div>
+            </div>
+        </div>
+
+         <!-- Cart Icon -->
+          <!-- Cart Icon with Background Color at the Top -->
+    <button onclick="openCart()" id="cart-icon" style="position: fixed; top: 20px; right: 20px; padding: 15px 20px; background: #610f21; border: none; color: white; border-radius: 50%; font-size: 20px;">
+        🛒 0
+</button>
+
+        </div>
+    
+        <!-- Link to External JavaScript -->
+        <script src="cart.js"></script>
+    
+      </body>
+      </html>
